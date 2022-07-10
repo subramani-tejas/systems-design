@@ -1,0 +1,28 @@
+
+## POST (in-memory) ##
+curl --request POST \
+--location localhost:3000/memory/tejas \
+--header 'Content-Type: application/json' \
+--data '{
+    "data": "in memory data"
+}'
+
+## GET (in-memory) ##
+curl --request GET \
+--location localhost:3000/memory/tejas \
+-w "\n"
+
+
+
+## POST (disk) ##
+curl --request POST \
+--location localhost:3000/disk/tejas \
+--header 'Content-Type: application/json' \
+--data '{
+    "data": "data on disk #1"
+}'
+
+## GET (disk) ##
+curl --request GET \
+--location localhost:3000/disk/tejas \
+-w "\n"
