@@ -1,0 +1,9 @@
+## no cache ##
+curl --request GET \
+--location localhost:3000/nocache/index.html \
+-w "\n"
+
+## cache ##
+curl --request GET \
+--location localhost:3000/cache/index.html \
+-w "\n"
