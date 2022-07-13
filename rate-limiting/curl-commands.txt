@@ -1,0 +1,6 @@
+## sample user ##
+
+curl --request GET \
+--header 'user: tejas' \
+--location localhost:3000/index.html \
+-w "\n"
